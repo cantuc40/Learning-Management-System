@@ -1,7 +1,7 @@
 package com.example.LearningManagementSystemBack.model;
 
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
 import java.util.UUID;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -12,7 +12,7 @@ public class Student {
     private final String name;
     private final String major;
     private final double gpa;
-    private final List<Course> course_history;
+    //private final List<Course> course_history;
 
     public Student(
         @JsonProperty("id") UUID id,
@@ -23,7 +23,7 @@ public class Student {
         this.name = name;
         this.major = Major;
         gpa = 3.00;
-        course_history = new ArrayList<>();
+        //course_history = new ArrayList<>();
     }
     
     public UUID getID(){
