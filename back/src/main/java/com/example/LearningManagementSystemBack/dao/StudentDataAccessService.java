@@ -7,6 +7,9 @@ import java.util.UUID;
 
 import com.example.LearningManagementSystemBack.model.Student;
 
+import org.springframework.stereotype.Repository;
+
+@Repository("postgres")
 public class StudentDataAccessService implements StudentDao {
 
     private static List<Student> StudentDB = new ArrayList<>();

@@ -4,12 +4,18 @@ package com.example.LearningManagementSystemBack.model;
 //import java.util.List;
 import java.util.UUID;
 
+import javax.validation.constraints.NotBlank;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Student {
 
     private final UUID id;
+
+    @NotBlank
     private final String name;
+    
+    
     private final String major;
     private final double gpa;
     //private final List<Course> course_history;
