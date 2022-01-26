@@ -1,0 +1,72 @@
+<%= form_with(model: course) do |form| %>
+  <% if course.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+      <ul>
+        <% course.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :number, style: "display: block" %>
+    <%= form.number_field :number %>
+  </div>
+
+  <div>
+    <%= form.label :name_abbrev, style: "display: block" %>
+    <%= form.text_field :name_abbrev %>
+  </div>
+
+  <div>
+    <%= form.label :course_id, style: "display: block" %>
+    <%= form.number_field :course_id %>
+  </div>
+
+  <div>
+    <%= form.label :prereqs, style: "display: block" %>
+    <%= form.text_area :prereqs %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :grade, style: "display: block" %>
+    <%= form.number_field :grade %>
+  </div>
+
+  <div>
+    <%= form.label :professor, style: "display: block" %>
+    <%= form.text_field :professor %>
+  </div>
+
+  <div>
+    <%= form.label :letter_grade, style: "display: block" %>
+    <%= form.text_field :letter_grade %>
+  </div>
+
+  <div>
+    <%= form.label :semester, style: "display: block" %>
+    <%= form.text_field :semester %>
+  </div>
+
+  <div>
+    <%= form.label :year, style: "display: block" %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
