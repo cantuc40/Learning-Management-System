@@ -1,0 +1,33 @@
+<h2>Courses</h2>
+
+<div id="courses">
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Number</th>
+      <th>Course Abbr</th>
+      <th>ID</th>
+      <th>Prerequisites</th>
+      <th>Description</th>
+      <th>Grade</th>
+      <th>Professor</th>
+      <th>Grade</th>
+      <th>Semester</th>
+      <th>Year</th>
+    </tr>
+
+    <% @student.courses.each do |course| %>
+        <tr>
+            <td><%= course.name %></td>
+            <td><%= course.number %></td>
+            <td><%= course.id %></td>
+            <td><%= course.prereqs %></td>
+            <td><%= course.description %></td>
+            <td><%= course.grade %></td>
+            <td><%= course.professor %></td>
+            <td><%= course.grade %></td>
+            <td><%= course.semester %></td>
+        </tr>
+    <% end %>
+  </table>
+</div>

@@ -24,6 +24,7 @@ class CoursesTest < ApplicationSystemTestCase
     fill_in "Prereqs", with: @course.prereqs
     fill_in "Professor", with: @course.professor
     fill_in "Semester", with: @course.semester
+    fill_in "Student", with: @course.student_id
     fill_in "Year", with: @course.year
     click_on "Create Course"
 
@@ -45,6 +46,7 @@ class CoursesTest < ApplicationSystemTestCase
     fill_in "Prereqs", with: @course.prereqs
     fill_in "Professor", with: @course.professor
     fill_in "Semester", with: @course.semester
+    fill_in "Student", with: @course.student_id
     fill_in "Year", with: @course.year
     click_on "Update Course"
 

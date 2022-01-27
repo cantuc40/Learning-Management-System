@@ -1,21 +1,21 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: %i[ show edit update destroy ]
 
-  # GET /students or /students.json
+  # GET /students or /students.json     students_path
   def index
     @students = Student.all
   end
 
-  # GET /students/1 or /students/1.json
+  # GET /students/1 or /students/1.json    student_path(1)
   def show
   end
 
-  # GET /students/new
+  # GET /students/new                new_student_path
   def new
     @student = Student.new
   end
 
-  # GET /students/1/edit
+  # GET /students/1/edit             edit_student_path(1)
   def edit
   end
 

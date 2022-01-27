@@ -16,10 +16,13 @@
         <td><%= student.name %>  </td>
         <td><%= student.major %> </td>
         <td><%= student.gpa %>   </td>
+
+        <!-- student is used for  Link to /students/{id}, Refer to students/show.html.erb--->
         <td><%= link_to "Show this student", student %></td>
       </tr>
     <% end %>
   </table>
 </div>
 
+<!-- new_student_path is used for Link to /students/new. Refer to students/new.html.erb -->
 <%= link_to "New student", new_student_path %>

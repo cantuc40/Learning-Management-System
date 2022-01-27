@@ -1,10 +1,10 @@
-<%= form_with(model: course) do |form| %>
-  <% if course.errors.any? %>
+<%= form_with(model: @courses) do |form| %>
+  <% if @course.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(course.errors.count, "error") %> prohibited this course from being saved:</h2>
+      <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
 
       <ul>
-        <% course.errors.each do |error| %>
+        <% @course.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
@@ -70,3 +70,5 @@
     <%= form.submit %>
   </div>
 <% end %>
+
+<!--ISSUEs :No routes match for post /students/{id}/courses/new-->
