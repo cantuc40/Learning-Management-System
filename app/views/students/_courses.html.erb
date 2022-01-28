@@ -15,19 +15,6 @@
       <th>Semester</th>
       <th>Year</th>
     </tr>
-
-    <% @student.courses.each do |course| %>
-        <tr>
-            <td><%= course.name %></td>
-            <td><%= course.number %></td>
-            <td><%= course.id %></td>
-            <td><%= course.prereqs %></td>
-            <td><%= course.description %></td>
-            <td><%= course.grade %></td>
-            <td><%= course.professor %></td>
-            <td><%= course.grade %></td>
-            <td><%= course.semester %></td>
-        </tr>
-    <% end %>
+    <%= render student.courses %>
   </table>
 </div>
