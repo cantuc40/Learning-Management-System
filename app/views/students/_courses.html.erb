@@ -8,13 +8,12 @@
       <th>Course Abbr</th>
       <th>ID</th>
       <th>Prerequisites</th>
-      <th>Description</th>
       <th>Grade</th>
       <th>Professor</th>
       <th>Grade</th>
       <th>Semester</th>
       <th>Year</th>
     </tr>
-    <%= render student.courses %>
+    <%= render "courses/course", student: @student %>
   </table>
 </div>

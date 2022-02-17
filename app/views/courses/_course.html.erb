@@ -1,3 +1,17 @@
-<div id=" <%= dom_id(course)%> ">
-    <%= course.content%>
+<div id="courses">
+    <% @student.courses.each do |course| %>
+        <tr>
+            <td><%= course.name %>  </td>
+            <td><%= course.number %>  </td>
+            <td><%= course.name_abbrev %>  </td>
+            <td><%= course.course_id %>  </td>
+            <td><%= course.prereqs %>  </td>
+            <td><%= course.grade %>  </td>
+            <td><%= course.professor %>  </td>
+            <td><%= course.letter_grade %>  </td>
+            <td><%= course.semester %>  </td>
+            <td><%= course.year %>  </td>
+        </tr>
+    <% end %>
+
 </div>
