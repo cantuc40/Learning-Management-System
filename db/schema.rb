@@ -33,7 +33,9 @@ ActiveRecord::Schema.define(version: 2022_01_28_173014) do
   create_table "students", force: :cascade do |t|
     t.string "name"
     t.string "major"
-    t.integer "gpa"
+    t.decimal "gpa", precision: 10, scale: 4
+    t.string "address"
+    t.date "birthdate"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

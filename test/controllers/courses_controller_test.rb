@@ -6,12 +6,12 @@ class CoursesControllerTest < ActionDispatch::IntegrationTest
   # end
 
   test "should get new Course" do
-    get new_student_course_url
+    get new_student_courses_url(@student)
     assert_response :success
   end
 
   test "should create student course" do
-    assert_difference("Student.course.count") do
+    assert_difference("Student.courses.count") do
       post courses_url, params: { course: {
         name: @student.courses.name, 
         number: @student.courses.number, 

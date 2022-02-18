@@ -1,19 +1,27 @@
 <div id="<%= dom_id student %>">
-  <p>
-    <strong>Name:</strong>
-    <%= student.name %>
-  </p>
 
-  <p>
-    <strong>Major:</strong>
-    <%= student.major %>
-  </p>
-
-  <p>
-    <strong>GPA:</strong>
-    <%= student.gpa %>
-  </p>
-
+  <table>
+    <tr>
+      <th><strong>Name</strong></th>
+      <td><%= student.name %></td>
+      <th><strong>Address</strong></th>
+      <td><%= student.address %></td>
+    </tr>
+    </tr>
+    <tr>
+      <th><strong>Major</strong></th>
+      <td><%= student.major %></td>
+      <th><strong>GPA</strong></th>
+      <td><%= student.gpa %></td>
+    </tr>
+    <tr>
+      <th><strong>Birthdate</strong></th>
+      <td><%= student.birthdate %></td>
+      <th><strong></strong></th>
+      <td></td>
+    </tr>
+    
+  </table>
 
 </div>
 

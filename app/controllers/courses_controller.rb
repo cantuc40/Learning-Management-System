@@ -1,14 +1,20 @@
 class CoursesController < ApplicationController
     before_action :set_student
 
+    def index
+      @courses = Course.all
+    end
+
+    def show
+    end
 
 
-    #Create new Course for student    
+    #GET  /students/{:id}/courses/new
     def new
         @course = Course.new
     end
 
-
+    #POST /students/{:id}/courses/new
     def create
       @student.courses.create! params.required(:course).permit(
         :name, 
@@ -31,7 +37,7 @@ class CoursesController < ApplicationController
   
 
 
-
+    #Check if student exists
     private
         def set_student
           @student = Student.find(params[:student_id])
