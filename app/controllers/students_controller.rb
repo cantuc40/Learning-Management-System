@@ -6,6 +6,8 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
 
+
+  
   # GET /students/1 or /students/1.json    (link_to student_path(1))
   def show
   end

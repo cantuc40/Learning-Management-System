@@ -1,12 +1,12 @@
 <div id="courses">
-    <% @student.courses.each do |course| %>
+    <% @student.courses.each do |student_course| %>
         <tr>
-            <td><%= course.name %>  </td>
-            <td><%= course.number %>  </td>
-            <td><%= course.course_id %>  </td>
-            <td><%= course.semester %>  </td>
-            <td><%= course.year %>  </td>
-            <td><%= link_to "Course", "courses/show" %></td>
+            <td><%= student_course.name %>  </td>
+            <td><%= student_course.number %>  </td>
+            <td><%= student_course.course_id %>  </td>
+            <td><%= student_course.semester %>  </td>
+            <td><%= student_course.year %>  </td>
+            <td><%= link_to "course", student_course %></td>
         </tr>
     <% end %>
 

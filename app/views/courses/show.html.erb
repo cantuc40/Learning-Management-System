@@ -1,13 +1,11 @@
- <% @student.courses.each do |course| %>
         <tr>
-            <td><%= course.name %></td>
-            <td><%= course.number %></td>
-            <td><%= course.id %></td>
-            <td><%= course.prereqs %></td>
-            <td><%= course.description %></td>
-            <td><%= course.grade %></td>
-            <td><%= course.professor %></td>
-            <td><%= course.grade %></td>
-            <td><%= course.semester %></td>
+            <td><%= student_course.name %></td>
+            <td><%= student_course.number %></td>
+            <td><%= student_course.id %></td>
+            <td><%= student_course.prereqs %></td>
+            <td><%= student_course.description %></td>
+            <td><%= student_course.grade %></td>
+            <td><%= student_course.professor %></td>
+            <td><%= student_course.grade %></td>
+            <td><%= student_course.semester %></td>
         </tr>
-    <% end %>
