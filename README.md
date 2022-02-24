@@ -1,4 +1,5 @@
 ![Learning-Management-System](https://github.com/cantuc40/Learning-Management-System/blob/master/app/assets/images/main_screen.png)
+![Learning-Management-SYstem](https://github.com/cantuc40/Learning-Management-System/blob/master/app/assets/images/student_info.png)
 
 # Learning-Management-System
 
